@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tu movie website</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!--google font-->
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+<!--carrousel-->
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+
+<!--box icons-->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+     
+     <!--app css-->
+     <link rel="stylesheet" href="grid.css">
+     <link rel="stylesheet" href="app.js">
+
+ <body>
+
+    <!--script-->
+<script src="app.js"></script>
+ <!--movie section-->
+
+ <!--fin slide items-->
+           
+ <!--nav-->
+ 
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>tumovie<span class="main-color"></span> 
+                   
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">peliculas</a></li>
+                    <li><a href="#">series</a></li>
+                    <li><a href="#">mi lista</a></li>
+                    
+                       
+                    </li>
+                </ul>
+
+                <!--search box-->
+                <form action="" class="search-box"> 
+                    <!--imput-->
+                    <input type="text" name="search" placeholder="Buscar peliculas" class="search-input" required/>
+                    <!--btn-->
+                    <button type="submit"></button>
+                </form>
+                </div>
+
+
+            </div>
+        </header>
+
+        <main>
+            <div class="pelicula-principal">
+                <div class="contenedor">
+                    <h3 class="titulo">Interestellar</h3>
+                    <p class="descripcion">
+                        Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.
+                    </p>
+                    <button id="play-button-main" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+                    <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+                </div>
+            </div>
+        </main>
+
+        <!--peliculas-->
+        <section>
+
+        <peliculas id="peliculas"></peliculas>
+        <h2 class="heading">Peliculas recomendadas</h2>
+        <hr>
+        <!--peliculas contenedor-->
+        <div class="box-container-1">
+            <!--caja1-->
+            <div class="box-1">
+                <div class="content">
+                    <img src="../img/caja1.jpg" alt="">
+                </div>
+                <h3>The Flash</h3>
+                <span>144 min | superheroes</span>
+            </div>
+             <!--caja2-->
+             <div class="box-1">
+                <div class="content">
+                    <img src="../img/caja2.jpg" alt="">
+                </div>
+                <h3>Spiderman: across the spider verse</h3>
+                <span>140 min | superheroes</span>
+            </div>
+             <!--caja3-->
+             <div class="box-1">
+                <div class="content">
+                    <img src="../img/caja3.jpg" alt="">
+                </div>
+                <h3>Ant man: and the wasp quantumania</h3>
+                <span>124 min | superheroes</span>
+            </div>
+             <!--caja4-->
+             <div class="box-1">
+                <div class="content">
+                    <img src="../img/caja4.jpg" alt="">
+                </div>
+                <h3>Doctor strange: en el multiverso de la locura</h3>
+                <span>126 min | superheroes</span>
+            </div>
+             <!--caja5-->
+             <div class="box-1">
+                <div class="content">
+                    <img src="../img/caja5.png" alt="">
+                </div>
+                <h3>Dune</h3>
+                <span>155 min | Drama </span>
+            </div>
+              <!--caja6-->
+              <div class="box-1">
+                <div class="content">
+                    <img src="../img/caja6.jpg" alt="">
+                </div>
+                <h3>Avengers: End game</h3>
+                <span>181 min | superheroes </span>
+            </div>
+              <!--caja7-->
+              <div class="box-1">
+                <div class="content">
+                    <img src="../img/caja7.png" alt="">
+                </div>
+                <h3>Interestelar</h3>
+                <span>169 min | Drama </span>
+            </div>
+              <!--caja8-->
+              <div class="box-1">
+                <div class="content">
+                    <img src="../img/caja8.jpg" alt="">
+                </div>
+                <h3>Your name</h3>
+                <span>106 min | Drama </span>
+            </div>
+        </div>
+
+        <div class="load-more" id="load-more-1">cargar mas</div>
+
+    </section>
+
+     <!--series-->
+     <section>
+
+        <peliculas id="peliculas"></peliculas>
+        <h2 class="heading">Series recomendadas</h2>
+        <hr>
+        <!--peliculas contenedor-->
+        <div class="box-container-2">
+            <!--caja1-->
+            <div class="box-2">
+                <div class="content">
+                    <img src="../img/serie1.jpg" alt="">
+                </div>
+                <h3>Wanda Vision</h3>
+                <span>1 temporada | superheroes</span>
+            </div>
+             <!--caja2-->
+             <div class="box-2">
+                <div class="content">
+                    <img src="../img/serie2.jpg" alt="">
+                </div>
+                <h3>The last of us</h3>
+                <span>1 temporada | superheroes</span>
+            </div>
+             <!--caja3-->
+             <div class="box-2">
+                <div class="content">
+                    <img src="../img/serie3.jpg" alt="">
+                </div>
+                <h3>Stranger things</h3>
+                <span>4 temporadas| ciencia ficcion</span>
+            </div>
+             <!--caja4-->
+             <div class="box-2">
+                <div class="content">
+                    <img src="../img/serie4.jpg" alt="">
+                </div>
+                <h3>Loki</h3>
+                <span>2 temporadas | superheroes</span>
+            </div>
+             <!--caja5-->
+             <div class="box-2">
+                <div class="content">
+                    <img src="../img/serie5.jpg" alt="">
+                </div>
+                <h3>Succession</h3>
+                <span>4 temporadas| Drama </span>
+            </div>
+              <!--caja6-->
+              <div class="box-2">
+                <div class="content">
+                    <img src="../img/serie6.jpg" alt="">
+                </div>
+                <h3>Dark</h3>
+                <span>3 temporadas | misterio </span>
+            </div>
+              <!--caja7-->
+              <div class="box-2">
+                <div class="content">
+                    <img src="../img/serie7.jpg" alt="">
+                </div>
+                <h3>better call saul</h3>
+                <span>6 temporadas | Drama </span>
+            </div>
+              <!--caja8-->
+              <div class="box-2">
+                <div class="content">
+                    <img src="../img/serie8.jpg" alt="">
+                </div>
+                <h3>game of thrones</h3>
+                <span>8 temporadas | fantasia </span>
+            </div>
+        </div>
+
+        <div class="load-more" id="load-more-2">cargar mas</div>
+
+    </section>
+
+    <!--peliculas estreno-->
+    <section class="coming" id="coming">
+        <h2 class="heading">Proximos estrenos</h2>
+        <hr>
+        <!--peliculas contenedor-->
+        <div class="coming-container swiper">
+            <div class="swiper-wrapper">
+                 <!--caja1-->
+                 <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../img/estreno1.jpg" alt="">
+                    </div>
+                    <h3>Oppenheimer</h3>
+                 </div>
+                  <!--caja2-->
+                  <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../img/estreno2.jpg" alt="">
+                    </div>
+                    <h3>aquaman and the lost kingdom</h3>
+                 </div>
+                  <!--caja3-->
+                  <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../img/estreno3.jpg" alt="">
+                    </div>
+                    <h3>Dune parte dos</h3>
+                 </div>
+                  <!--caja4-->
+                  <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../img/estreno4.jpg" alt="">
+                    </div>
+                    <h3>five nights at freddy's</h3>
+                 </div>
+                  <!--caja5-->
+                  <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../img/estreno5.jpg" alt="">
+                    </div>
+                    <h3>Deadpool 3</h3>
+                 </div>
+                  <!--caja6-->
+                  <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../img/estreno6.jpg" alt="">
+                    </div>
+                    <h3>barbie</h3>
+                 </div>
+                  <!--caja7-->
+                  <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../img/estreno7.jpg" alt="">
+                    </div>
+                    <h3>Kraven el cazador</h3>
+                 </div>
+                  <!--caja8-->
+                  <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../img/estreno8.jpg" alt="">
+                    </div>
+                    <h3>La monja 2</h3>
+                 </div>
+                 <!--caja9-->
+                 <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../img/estreno9.jpg" alt="">
+                    </div>
+                    <h3>Poderes ocultos</h3>
+                 </div>
+                  <!--caja10-->
+                  <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="../img/estreno10.jpg" alt="">
+                    </div>
+                    <h3>The marvels</h3>
+                 </div>
+                 
+
+                </div>
+
+            </div>
+             <!-- FOOTER SECTION -->
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="content">
+                        <a href="#" class="logo">
+                            <i class='bx bx-movie-play bx-tada main-color'></i>Tumovie<span class="main-color"></span>
+                        </a>
+                        <p>
+                           
+                        </p>
+                        <div class="social-list">
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Tumovie</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">Sobre nosotros</a></li>
+                                    <li><a href="#">mi perfil</a></li>
+                                    <li><a href="#">peliculas</a></li>
+                                    <li><a href="#">Contactos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Download app</b></p>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="../img/google-play.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../img/app-store.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+         <!--copyright-->
+         <div class="copyright">
+            <p>&#169; Tumovie All rights Reserved </p>
+         </div>
+        </div>
+       
+    </div>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="app.js"></script>
+    
+</body>
+</html>
